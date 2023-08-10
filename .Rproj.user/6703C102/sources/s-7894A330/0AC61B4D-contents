@@ -1,0 +1,266 @@
+baseURL: "https://hugo-profile.netlify.app"
+languageCode: "en-us"
+title: "Iswan Achlan Setiawan"
+theme: "hugo-profile"
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+Paginate: 3
+enableRobotsTXT: true
+# disqusShortname: your-disqus-shortname
+# googleAnalytics: G-MEASUREMENT_ID
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+Menus:
+
+params:
+  title: "Iswan Achlan S"
+  description: Text about my cool site
+  # staticPath: ""  # The path to serve the static files from
+  favicon: "/info.png"
+
+  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
+  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
+  # Note the lack of "" in true, it should be of boolean type.
+  useBootstrapCDN: false
+
+  # If you want to load dynamically responsive images from Cloudinary
+  # This requires your images to be uploaded + hosted on Cloudinary
+  # Uncomment and change YOUR_CLOUD_NAME to the Cloud Name in your Cloudinary console
+  # cloudinary_cloud_name: "YOUR_CLOUD_NAME"
+
+  # Whether the fade animations on the home page will be enabled
+  animate: true
+
+  theme:
+    # disableThemeToggle: true
+    defaultTheme: "light" # dark
+
+  font:
+    fontSize: 1rem # default: 1rem
+    fontWeight: 400 # default: 400
+    lineHeight: 1.5 # default: 1.5
+    textAlign: left # default: left
+
+  # color preference
+  # color:
+  #   textColor:
+  #   secondaryTextColor:
+  #   backgroundColor:
+  #   secondaryBackgroundColor:
+  #   primaryColor:
+  #   secondaryColor:
+
+  #   darkmode:
+  #     textColor:
+  #     secondaryTextColor:
+  #     backgroundColor:
+  #     secondaryBackgroundColor:
+  #     primaryColor:
+  #     secondaryColor:
+
+  # If you want to customize the menu, you can change it here
+  navbar:
+    align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+    # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+    # showBrandLogo: false # Show brand logo in nav bar | default is true
+    brandName: "Curriculume Vitae" # Brand name for the brand | default is the title variable
+    disableSearch: false
+    # searchPlaceholder: "Search"
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: false
+      disableContact: false
+
+  # Hero
+  hero:
+    enable: true
+    intro: "Hi, my name is"
+    title: "Iswan Achlan Setiawan."
+    subtitle: "I am Data Analyst"
+    content: "A passionate Data Analytics and Data Visualization"
+    image: /images/profil.jpg
+    bottomImage:
+      enable: true
+    # roundImage: true # Make hero image circular | default false
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-linkedin
+          url: https://www.linkedin.com/in/iswan45/
+        - icon: fab fa-instagram
+          url: https://www.instagram.com/iswan45/
+
+
+  # About
+  about:
+    enable: true
+    title: "About Me"
+    content: |-
+      I am a data analyst who is passionate about data. I have a background in magister of applied statistics from Bogor Agricultular University, and I have a strong interest in big data, machine learning, data visualization. 
+      
+      I am currently working as a data analyst at ministry of education, culture, research and technology. 
+      
+    skills:
+      enable: true
+      title: "Here are a few technologies I've been working with recently:"
+      items:
+        - "R"
+        - "Python"
+        - "SQL"
+        - "Metabase"
+        - "Google Data Studio"
+        - "SPSS"
+        - "BigQuery"
+
+  # Experience
+  experience:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - job: "Data Analyst"
+        company: "Kemendikbudristek"
+        companyUrl: "https://www.kemdikbud.go.id/"
+        date: "Feb 2019 - present"
+        content: |
+          - Collecting and analyzing data from internal databases and other sources.
+          - Creating data visualization using metabase and google data studio
+          - Creating data modeling standards and procedures
+
+      - job: "Practitioner Lecturer"
+        company: "State University of Makassar"
+        companyUrl: "https://unm.ac.id/"
+        date: "Aug 2022 - Nov 2022"
+        content: |
+          Lecturer in Data Exploration Analysis course
+
+      - job: "Data Analyst"
+        company: "Swan Statistics"
+        date: "Jan 2017 - Jan 2019"
+        content: |
+          Analyzing research data for thesis and dissertation
+
+  # Education
+  education:
+    enable: true
+    # title: "Custom Name"
+    index: false
+    items:
+      - title: "Master of Applied Statistics"
+        school:
+          name: "Bogor Agricultural University"
+          url: "https://ipb.ac.id/"
+        date: "2016 - 2018"
+        GPA: "3.8 out of 4.0"
+        content: |-
+          Research:
+          Application of Generalized Structural Component Analysis to Identify Relation between Accreditation and National Examination.
+      - title: "Bachelor of Mathematics Education"
+        school:
+          name: "State University of Makassar"
+          url: "https://unm.ac.id"
+        date: "2011 - 2015"
+        GPA: "3.68 out of 4.0"
+        content: |-
+          Research: The Effect of Video Learning on Scientific Approaches on Students' Mathematics Learning Outcomes by Paying Attention to Initial Ability
+
+  # Achievements
+  achievements:
+    enable: true
+    title: "Certificates"
+    items:
+      - title: FINANCIAL DATA CHALLENGE 2022 – BRI x BRIBRAIN x SVI
+        content: Ranking 31/442, April 2022
+        image: /images/fdc2.png
+      - title: Spark and Python for Big Data with Pyspark
+        content: as Participant in Course
+        image: /images/pyspark.png
+      - title: Data Science in Practice, IPB University
+        content: as Speakers in Webinar
+        image: /images/dsi.jpeg
+
+  # projects
+  projects:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - title: Dashboard Development
+        content: Manage sql server database and create dashboard using metabase.
+        image: /images/projects/metabase.png
+        
+      - title: Rapor Dapodik Application
+        content: As an instrument development team and database management team using sql server.
+        image: /images/projects/converter.jpg
+
+      - title: SPM Application
+        content: As an instrument development team and database management team using postgresql
+        image: /images/projects/profile2.jpg
+      
+      - title: BOP Salur Application
+        content: As an instrument development team and database management team using sql server
+        image: /images/projects/profile2.jpg
+      
+      - title: Rapor Pendidikan Application
+        content: As an metadata development team
+        image: /images/projects/profile2.jpg
+        
+
+  #Contact
+  contact:
+    enable: true
+    # title: "Custom Name"
+    content: My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
+    email: iswan.achlan@gmail.com
+    btnName: Mail me
+    # formspree:
+    #   enable: true # `contact.email` value will be ignored
+    #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
+    #   emailCaption: "Enter your email address"
+    #   messageCaption: "Enter your message here"
+
+  footer:
+    socialNetworks:
+      github: https://github.com/iswan45
+      linkedin: https://www.linkedin.com/in/iswan45/
+      instagram: https://instagram.com/iswan45
+
+  # List pages like blogs and posts
+  listPages:
+    disableFeaturedImage: false
+
+  # Single pages like blog and post
+  singlePages:
+    readTime:
+      enable: true
+      content: "min read"
+    scrollprogress:
+      enable: true
+
+  # For translations
+  terms:
+    read: "Read"
+    toc: "Table Of Contents"
+    copyright: "All rights reserved"
+    pageNotFound: "Page not found"
+    emailText: "Check out this site"
+
+  datesFormat:
+    article: "Jan 2, 2006"
+    articleList: "Jan 2, 2006"
+    articleRecent: "Jan 2, 2006"
+
+  #customScripts: -| # You can add custom scripts which will be added before </body> tag
+  #  <script type="text/javascript"><!-- any script here --></script>
