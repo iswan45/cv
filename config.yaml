@@ -198,24 +198,24 @@ params:
     # title: "Custom Name"
     items:
       - title: Dashboard Development
-        content: Manage sql server database and create dashboard using metabase.
+        content: Manage sql server database and create dashboard using metabase and google data studio (looker).
         image: /images/projects/metabase.png
         
-      - title: Rapor Dapodik Application
+      - title: Rapor Dapodik App
         content: As an instrument development team and database management team using sql server.
-        image: /images/projects/converter.jpg
+        image: /images/projects/rapordapo.png
 
-      - title: SPM Application
+      - title: SPM App
         content: As an instrument development team and database management team using postgresql
-        image: /images/projects/profile2.jpg
+        image: /images/projects/spm.png
       
-      - title: BOP Salur Application
+      - title: BOP Salur App
         content: As an instrument development team and database management team using sql server
-        image: /images/projects/profile2.jpg
+        image: /images/projects/bop.png
       
       - title: Rapor Pendidikan App
-        content: As an metadata development team
-        image: /images/projects/profile2.jpg
+        content: As a metadata development team
+        image: /images/projects/raporpend.png
         
 
   #Contact
