@@ -93,7 +93,7 @@ params:
     title: "Iswan Achlan Setiawan."
     subtitle: "I am Data Analyst"
     content: "A passionate Data Analytics and Data Visualization"
-    image: /images/profil.jpg
+    image: /images/avatar.png
     bottomImage:
       enable: true
     # roundImage: true # Make hero image circular | default false
